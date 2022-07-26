@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    width: 100%;
+    height: 860px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    right: 0;
+    width: 2000px;
+    height: 100%;
+    background-image: url(/assets/img/background.png);
+    background-size: cover;
+    animation: background-animation 2.5s linear infinite;
+}
+
+.background::after {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/img/background.png);
+    background-size: cover;
+    left: 100vw;
+    width: 2000px;
+    height: 100%;
+}
+
+.character {
+    left: 100px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.barrel {
+    width: 140px;
+    position: absolute;
+    bottom: 0;
+    animation: barrel-animation 2.68s infinite linear;
+    z-index: 1;
+}
+
+.jump {
+    animation: char-jump 600ms infinite linear;
+}
+
+@keyframes background-animation {
+    from {right: 0;}
+    to {right: 100%;}
+}
+
+@keyframes barrel-animation {
+    from {right: -140px;}
+    to {right: 100%;}
+}
+
+@keyframes char-jump {
+    0% {bottom: 0;}
+    40% {bottom: 200px;}
+    50% {bottom: 200px;}
+    60% {bottom: 200px;}
+    100% {bottom: 0;}
+}
