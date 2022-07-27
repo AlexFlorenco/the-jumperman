@@ -17,7 +17,7 @@
     right: 0;
     width: 2000px;
     height: 100%;
-    background-image: url(./assets/img/background.png);
+    background-image: url(/assets/img/background.png);
     background-size: cover;
     animation: background-animation 2.5s linear infinite;
 }
