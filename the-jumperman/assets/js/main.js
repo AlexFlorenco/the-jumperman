@@ -18,7 +18,7 @@ const loop = setInterval(() => {
 
     if (barrelPosition < 180 && barrelPosition > 0 && charPosition < 100) {
         barrel.remove();
-        character.src = '/assets/img/explosion.gif';
+        character.src = './assets/img/explosion.gif';
 
         setTimeout(() => {
             character.style.width = '600px';
