@@ -17,7 +17,7 @@
     right: 0;
     width: 2000px;
     height: 100%;
-    background-image: url(/assets/img/background.png);
+    background-image: url(https://alexflorenco.github.io/the-jumperman/assets/img/background.png);
     background-size: cover;
     animation: background-animation 2.5s linear infinite;
 }
@@ -25,7 +25,7 @@
 .background::after {
     content: "";
     position: absolute;
-    background-image: url(/assets/img/background.png);
+    background-image: url(https://alexflorenco.github.io/the-jumperman/assets/img/background.png);
     background-size: cover;
     left: 100vw;
     width: 2000px;
